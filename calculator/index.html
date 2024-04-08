@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Tools</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" integrity= "sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ==" crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+        	<script src= "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js" integrity= "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	
+	</head>
+	<body>	                       
+		
+		<div class="container" id="calculator">
+                        <div class="mainUnit">
+                                <h2 id="answer"></h2>
+                                <button class="btn-btn-danger" id="clear"  onclick="reset()">C</button>
+                        </div>
+			 <div class="numbers">
+				<div class="col-1">
+					
+					<lable onclick="dis(7)">7</lable>
+					<lable onclick="dis(8)">8</lable>
+					<lable onclick="dis(9)">9</lable>
+					<lable onclick="dis('/')">÷</lable>
+					<lable onclick="dis('(')">(</lable>
+						
+				</div>
+
+				<div class="col-2">
+					
+					<lable onclick="dis(4)">4</lable>
+					<lable onclick="dis(5)">5</lable>
+					<lable onclick="dis(6)">6</lable>
+					<lable onclick="dis('*')">×</lable>
+					<lable onclick="dis('(')">)</lable>
+	
+				
+				</div>
+
+				<div class="col-3">
+					
+					<lable onclick="dis(1)">1</lable>
+					<lable onclick="dis(2)">2</lable>
+					<lable onclick="dis(3)">3</lable>
+					<lable onclick="dis('-')">-</lable>
+					<lable onclick="dis('**')">x²</lable>
+					
+				
+				</div>
+
+				<div class="col-4">
+					
+					<lable onclick="dis(0)">0</lable>
+					<lable onclick="dis('.')">.</lable>
+					<lable onclick="dis('+')">+</lable>
+					<button class="btn btn-success" id="result"  onclick="result()">=</button>
+			
+				</div>
+			 </div>
+		</div>
+	<script src="app.js"></script>
+	</body>
+
+</html>
