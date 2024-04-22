@@ -1,29 +1,28 @@
-#container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
   
-  #container #game{
-    text-align: center;
-    background-color: rgb(20,105,10);
-    height: 300px;
-    width: 300px;
-    padding-top: 20px;
-  }
-  #container #game h1{
-    text-align: center;
-  }
+  <div id="container">
+    <div id="game">
+      <h1>BlackJack</h1>
+      <span id="cards"></span>
+      <span id="sum"></span>
+      <span id="prompt"></span>
+      <br>
+      <button id="ng" onclick="game('n')">New Game</button>
+      <div id="btn">
+        <button id="hit" onclick="game('h')">Hit</button>
+        <button id="stand" onclick="game('s')">Stand</button>
+      </div>
+      <span id="crmny"></span>
+      <input id="entr" tyoe="number" placeholder="Money ">
+    </div>  
+
+  </div>
   
-  #container #game #btn{
-    padding-bottom: 20px;
-    padding-left: 5px;
-    text-align: center;
-  }
-  
-  
-  #container #game #entr{
-    text-align: center;
-    width: 50px;
-  }
+</body>
+</html>
