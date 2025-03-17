@@ -1,0 +1,29 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  #container #game{
+    text-align: center;
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    padding-bottom: 20px;
+  }
+  #container #game h1{
+    padding-bottom: 20px;
+    background-color: green;
+    text-align: center;
+  }
+  
+  #container #game #btn{
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  #container #game #entr{
+    text-align: center;
+    width: 50px;
+  }
